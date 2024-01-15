@@ -7,16 +7,20 @@ import java.util.Map;
 import java.util.PriorityQueue;
 
 class ChoosingTangerineSolution {
+    private final PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());
+    private final Map<Integer, Integer> count = new LinkedHashMap<>();
+
     public int solution(int k, int[] tangerine) {
-        int answer = 0;
         Arrays.sort(tangerine);
-        PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());
-        Map<Integer, Integer> count = new LinkedHashMap<>();
         for (int size : tangerine) {
             count.put(size, count.getOrDefault(size, 0)+1);
         }
         pq.addAll(count.values());
+        return getAnswer(k);
+    }
 
+    public int getAnswer(int k) {
+        int answer = 0;
         while (!pq.isEmpty() && k > 0) {
             int num = pq.poll();
             k -= num;
