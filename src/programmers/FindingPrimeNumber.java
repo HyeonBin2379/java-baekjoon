@@ -12,10 +12,8 @@ class FindingPrimeNumberSolution {
         visited = new boolean[numbers.length()];
         token = numbers.split("");
         backtracking(0, "");
-        return primeNumber.stream()
-                .filter(this::isPrimeNumber)
-                .toList()
-                .size();
+        return (int) primeNumber.stream()
+                .filter(this::isPrimeNumber).count();
     }
 
     public void backtracking(int index, String num) {
