@@ -3,30 +3,21 @@ package bakjoon;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.Set;
-import java.util.StringTokenizer;
-import java.util.TreeSet;
+import java.util.stream.Collectors;
 
 public class Exercise31618 {
+    private static Set<Integer> set;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        Set<Integer> set = new TreeSet<>();
         int len = Integer.parseInt(br.readLine());
+        set = Arrays.stream(br.readLine().split(" ", len)).map(Integer::parseInt).collect(Collectors.toSet());
+        System.out.println(isAnyMatched() ? "Yes" : "No");
+    }
 
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int[] num = new int[len];
-        for (int i = 0; i < len; i++) {
-            num[i] = Integer.parseInt(st.nextToken());
-            set.add(num[i]);
-        }
-
-        for (int i = 0; i < len; i++) {
-            if (set.contains(num[i]-3) && set.contains(num[i]+3)) {
-                System.out.println("Yes");
-                return;
-            }
-        }
-        System.out.println("No");
+    public static boolean isAnyMatched() {
+        return set.stream().anyMatch(integer -> set.contains(integer-3) && set.contains(integer+3));
     }
 }
