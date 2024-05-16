@@ -13,8 +13,8 @@ public class Exercise29648 {
         for (int i = 1; i*i <= s; i++) {
             if (s % i == 0) {
                 int y = s/i;
-                if (Math.max(a, b)+ i == Math.min(a, b)+y) {
-                    System.out.println(Math.max(a, b)+ i);
+                if (Math.max(a, b) + i == Math.min(a, b) + y) {
+                    System.out.println(Math.max(a, b) + i);
                     return;
                 }
             }
