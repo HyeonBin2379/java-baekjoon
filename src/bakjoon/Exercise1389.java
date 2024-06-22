@@ -2,60 +2,49 @@ package bakjoon;
 
 import java.io.*;
 import java.util.*;
+import java.util.stream.IntStream;
 
 public class Exercise1389 {
-    private static final Map<Integer, Set<Integer>> graph = new LinkedHashMap<>();
-    private static int[] dist;
+
+    private static final int INF = 987654321;
+    private static int[][] dist;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        int nodeCount = Integer.parseInt(st.nextToken());
-        int edgeCount = Integer.parseInt(st.nextToken());
+        int n = Integer.parseInt(st.nextToken());
+        int e = Integer.parseInt(st.nextToken());
 
-        dist = new int[nodeCount +1];
-        for (int i = 1; i <= nodeCount; i++) {
-            graph.put(i, new HashSet<>());
+        dist = new int[n+1][n+1];
+        for (int i = 1; i <= n; i++) {
+            Arrays.fill(dist[i], INF);
         }
-        for (int i = 0; i < edgeCount; i++) {
+        for (int i = 0; i < e; i++) {
             st = new StringTokenizer(br.readLine());
             int from = Integer.parseInt(st.nextToken());
             int to = Integer.parseInt(st.nextToken());
-            graph.get(from).add(to);
-            graph.get(to).add(from);
+            dist[from][to] = 1;
+            dist[to][from] = 1;
         }
         br.close();
 
-        int minCount = Integer.MAX_VALUE;
-        int minIndex = 0;
-        for (Integer user : graph.keySet()) {
-            int count = bfs(user);
-            if (minCount > count) {
-                minCount = count;
-                minIndex = user;
-            }
-        }
-        System.out.println(minIndex);
-    }
-
-    public static int bfs(int user) {
-        Queue<Integer> queue = new LinkedList<>();
-        int count = 0;
-
-        Arrays.fill(dist, -1);
-        queue.offer(user);
-        dist[user] = 0;
-        while (!queue.isEmpty()) {
-            Integer now = queue.poll();
-            for (Integer next : graph.get(now)) {
-                if (dist[next] != -1) {
-                    continue;
+        for (int k = 1; k <= n; k++) {
+            for (int i = 1; i <= n; i++) {
+                for (int j = 1; j <= n; j++) {
+                    dist[i][j] = Math.min(dist[i][k] + dist[k][j], dist[i][j]);
                 }
-                dist[next] = dist[now]+1;
-                count += dist[next];
-                queue.offer(next);
             }
         }
-        return count;
+
+        int[] score = new int[n+1];
+        int min = IntStream.rangeClosed(1, n)
+                .map(i -> {
+                    score[i] = Arrays.stream(dist[i]).filter(value -> value != INF).sum();
+                    return score[i];
+                })
+                .min()
+                .getAsInt();
+        System.out.println(IntStream.rangeClosed(1, n).filter(i -> score[i] == min).findFirst().getAsInt());
     }
+
 }
