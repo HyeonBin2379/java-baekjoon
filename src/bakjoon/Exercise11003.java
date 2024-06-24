@@ -8,23 +8,24 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.StringTokenizer;
 
-class Pair {
-    private final int index;
-    private final long value;
-    public Pair(int index, long value) {
-        this.index = index;
-        this.value = value;
-    }
-
-    public int getIndex() {
-        return index;
-    }
-    public long getValue() {
-        return value;
-    }
-}
 
 public class Exercise11003 {
+
+    private static class Pair {
+        private int index;
+        private long value;
+        public Pair(int index, long value) {
+            this.index = index;
+            this.value = value;
+        }
+        public int getIndex() {
+            return index;
+        }
+        public long getValue() {
+            return value;
+        }
+    }
+
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());

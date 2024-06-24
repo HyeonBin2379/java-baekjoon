@@ -5,32 +5,34 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-class Sieve {
-    private final List<Integer> result = new ArrayList<>();
-    public List<Integer> getPrimeNumber(int num) {
-        boolean[] sieve = new boolean[num+1];
-        Arrays.fill(sieve, true);
-
-        for (int i = 2; i <= num; i++) {
-            if (!sieve[i]) {
-                continue;
-            }
-
-            for (int j = 2*i; j <= num; j += i) {
-                sieve[j] = false;
-            }
-        }
-
-        for (int i = 2; i <= num; i++) {
-            if (sieve[i]) {
-                result.add(i);
-            }
-        }
-        return result;
-    }
-}
 
 public class Exercise17103 {
+
+    private static class Sieve {
+        private final List<Integer> result = new ArrayList<>();
+        public List<Integer> getPrimeNumber(int num) {
+            boolean[] sieve = new boolean[num+1];
+            Arrays.fill(sieve, true);
+
+            for (int i = 2; i <= num; i++) {
+                if (!sieve[i]) {
+                    continue;
+                }
+
+                for (int j = 2*i; j <= num; j += i) {
+                    sieve[j] = false;
+                }
+            }
+
+            for (int i = 2; i <= num; i++) {
+                if (sieve[i]) {
+                    result.add(i);
+                }
+            }
+            return result;
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int testCase = sc.nextInt();
