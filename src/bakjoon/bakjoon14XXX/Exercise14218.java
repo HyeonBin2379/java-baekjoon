@@ -15,14 +15,13 @@ import java.util.stream.IntStream;
 
 public class Exercise14218 {
 
-    private static int n;
     private static int[] visited;
     private static final Map<Integer, List<Integer>> graph = new TreeMap<>();
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        n = Integer.parseInt(st.nextToken());
+        int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
 
         IntStream.rangeClosed(1, n).forEach(i -> graph.put(i, new ArrayList<>()));
@@ -42,11 +41,11 @@ public class Exercise14218 {
             int to = Integer.parseInt(st.nextToken());
             graph.get(from).add(to);
             graph.get(to).add(from);
-            bfs();
+            bfs(n);
         }
     }
 
-    private static void bfs() {
+    private static void bfs(int size) {
         Queue<Integer> queue = new LinkedList<>();
         visited[1] = 0;
         queue.add(1);
@@ -59,7 +58,7 @@ public class Exercise14218 {
                 }
             }
         }
-        System.out.println(IntStream.rangeClosed(1, n)
+        System.out.println(IntStream.rangeClosed(1, size)
                 .mapToObj(i -> Integer.toString(visited[i]))
                 .collect(Collectors.joining(" ")));
     }
