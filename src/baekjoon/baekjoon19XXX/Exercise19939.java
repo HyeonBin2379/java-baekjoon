@@ -15,9 +15,7 @@ public class Exercise19939 {
         int k = Integer.parseInt(st.nextToken());
 
         int[] prefixSum = new int[k+1];
-        IntStream.rangeClosed(1, k).forEach(index -> {
-            prefixSum[index] = prefixSum[index-1]+index;
-        });
+        IntStream.rangeClosed(1, k).forEach(index -> prefixSum[index] = prefixSum[index-1]+index);
 
         if (n < prefixSum[k]) {
             System.out.println(-1);
