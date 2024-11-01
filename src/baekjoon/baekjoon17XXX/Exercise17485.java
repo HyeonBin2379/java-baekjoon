@@ -7,12 +7,12 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 import java.util.stream.IntStream;
 
-public class Exercise17484 {
+public class Exercise17485 {
 
     private static int n;
     private static int[][][] dp;
     private static final int INF = (int) 1e9;
-
+    
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
