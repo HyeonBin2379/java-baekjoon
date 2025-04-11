@@ -2,7 +2,7 @@
 
 ## 기본 프로필
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=hyunbinny)](https://solved.ac/hyunbinny/)
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=hyunbinny)](https://solved.ac/gusqls2379/)
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=gusqls2379)](https://solved.ac/gusqls2379/)
 
 ## 사용 언어 & IDE
 
