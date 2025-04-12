@@ -3,6 +3,10 @@
 ## 기본 프로필
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=hyunbinny)](https://solved.ac/hyunbinny/)
 
+</br>
+
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=gusqls2379)](https://solved.ac/gusqls2379/)
+
 ## 사용 언어 & IDE
 
 ![Java](https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white)
