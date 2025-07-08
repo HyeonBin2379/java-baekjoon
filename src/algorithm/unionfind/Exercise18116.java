@@ -1,4 +1,4 @@
-package algorithm.unionset;
+package algorithm.unionfind;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

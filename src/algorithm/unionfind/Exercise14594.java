@@ -1,4 +1,4 @@
-package algorithm.unionset;
+package algorithm.unionfind;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 import java.util.stream.IntStream;
 
-public class Exercise14595 {
+public class Exercise14594 {
 
     static class Pair implements Comparable<Pair> {
         int start, end;
