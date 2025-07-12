@@ -1,4 +1,4 @@
-package baekjoon.baekjoon21XXX;
+package algorithm.map;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -55,53 +55,53 @@ public class Exercise21944 {
         while (m-- > 0) {
             StringTokenizer st = new StringTokenizer(br.readLine());
             String command = st.nextToken();
-            int group, option, num, level;
+            int x, p, l, g;
             switch (command) {
                 case "recommend" -> {
-                    group = Integer.parseInt(st.nextToken());
-                    option = Integer.parseInt(st.nextToken());
-                    switch (option) {
-                        case 1 -> bw.write(subtrees.get(group).last().num + "\n");
-                        case -1 -> bw.write(subtrees.get(group).first().num + "\n");
+                    g = Integer.parseInt(st.nextToken());
+                    x = Integer.parseInt(st.nextToken());
+                    switch (x) {
+                        case 1 -> bw.write(subtrees.get(g).last().num + "\n");
+                        case -1 -> bw.write(subtrees.get(g).first().num + "\n");
                     }
                 }
                 case "recommend2" -> {
-                    option = Integer.parseInt(st.nextToken());
-                    switch (option) {
+                    x = Integer.parseInt(st.nextToken());
+                    switch (x) {
                         case 1 -> bw.write(tree.last().num + "\n");
                         case -1 -> bw.write(tree.first().num + "\n");
                     }
                 }
                 case "recommend3" -> {
-                    option = Integer.parseInt(st.nextToken());
-                    level = Integer.parseInt(st.nextToken());
+                    x = Integer.parseInt(st.nextToken());
+                    l = Integer.parseInt(st.nextToken());
                     Problem result;
-                    switch (option) {
+                    switch (x) {
                         case 1 -> {
-                            result = tree.ceiling(new Problem(0, level));
+                            result = tree.ceiling(new Problem(0, l));
                             bw.write((result == null ? -1 : result.num) + "\n");
                         }
                         case -1 -> {
-                            result = tree.lower(new Problem(0, level));
+                            result = tree.lower(new Problem(0, l));
                             bw.write((result == null ? -1 : result.num) + "\n");
                         }
                     }
                 }
                 case "add" -> {
-                    num = Integer.parseInt(st.nextToken());
-                    level = Integer.parseInt(st.nextToken());
-                    group = Integer.parseInt(st.nextToken());
-                    subtrees.get(group).add(new Problem(num, level));
-                    tree.add(new Problem(num, level));
-                    map.put(num, new Integer[]{level, group});
+                    p = Integer.parseInt(st.nextToken());
+                    l = Integer.parseInt(st.nextToken());
+                    g = Integer.parseInt(st.nextToken());
+                    subtrees.get(g).add(new Problem(p, l));
+                    tree.add(new Problem(p, l));
+                    map.put(p, new Integer[]{l, g});
                 }
                 case "solved" -> {
-                    num = Integer.parseInt(st.nextToken());
-                    level = map.get(num)[0];
-                    group = map.get(num)[1];
-                    map.remove(num);
-                    tree.remove(new Problem(num, level));
-                    subtrees.get(group).remove(new Problem(num, level));
+                    p = Integer.parseInt(st.nextToken());
+                    l = map.get(p)[0];
+                    g = map.get(p)[1];
+                    map.remove(p);
+                    tree.remove(new Problem(p, l));
+                    subtrees.get(g).remove(new Problem(p, l));
                 }
             }
         }
