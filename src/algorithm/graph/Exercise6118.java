@@ -23,7 +23,7 @@ public class Exercise6118 {
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
 
-        IntStream.rangeClosed(0, n).forEach(idx -> graph.add(new ArrayList<>()));;
+        IntStream.rangeClosed(0, n).forEach(idx -> graph.add(new ArrayList<>()));
         while (m-- > 0) {
             st = new StringTokenizer(br.readLine());
             int from = Integer.parseInt(st.nextToken());
