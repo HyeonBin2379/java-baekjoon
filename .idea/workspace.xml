@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1c17251a-0870-4e6c-be04-177edc60f7c8" name="변경" comment="# &lt;타입&gt; : &lt;제목&gt; 형식으로 작성하며 제목은 최대 50글자 정도로만 입력&#10;# 제목을 아랫줄에 작성, 제목 끝에 마침표 금지, 무엇을 했는지 명확하게 작성&#10;&#10;################&#10;# 본문(추가 설명)을 아랫줄에 작성&#10;&#10;################&#10;# 꼬릿말(footer)을 아랫줄에 작성 (관련된 이슈 번호 등 추가)&#10;&#10;################&#10;# feat : 기능 추가&#10;# fix : 버그 수정&#10;# docs : 문서 수정&#10;# test : 테스트 코드 추가&#10;# refactor : 코드 리팩토링&#10;# style : 코드 의미에 영향을 주지 않는 변경사항&#10;# chore : 빌드 부분 혹은 패키지 매니저 수정사항&#10;# cicd : CI/CD 관련 설정&#10;################" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "HyeonBin2379"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/HyeonBin2379/java-baekjoon.git",
+    "accountId": "bc1863bd-d562-450b-a2d7-ecbfd8101e40"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="30J2OfkqsMD6pGpP4asa8NnbeOV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/algorithm/java-baekjoon"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="1c17251a-0870-4e6c-be04-177edc60f7c8" name="변경" comment="" />
+      <created>1753331324479</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753331324479</updated>
+    </task>
+    <task id="LOCAL-00001" summary="# &lt;타입&gt; : &lt;제목&gt; 형식으로 작성하며 제목은 최대 50글자 정도로만 입력&#10;# 제목을 아랫줄에 작성, 제목 끝에 마침표 금지, 무엇을 했는지 명확하게 작성&#10;.gitignore 설정 변경&#10;################&#10;# 본문(추가 설명)을 아랫줄에 작성&#10;&#10;################&#10;# 꼬릿말(footer)을 아랫줄에 작성 (관련된 이슈 번호 등 추가)&#10;&#10;################&#10;# feat : 기능 추가&#10;# fix : 버그 수정&#10;# docs : 문서 수정&#10;# test : 테스트 코드 추가&#10;# refactor : 코드 리팩토링&#10;# style : 코드 의미에 영향을 주지 않는 변경사항&#10;# chore : 빌드 부분 혹은 패키지 매니저 수정사항&#10;# cicd : CI/CD 관련 설정&#10;################">
+      <option name="closed" value="true" />
+      <created>1753331438276</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1753331438276</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="# &lt;타입&gt; : &lt;제목&gt; 형식으로 작성하며 제목은 최대 50글자 정도로만 입력&#10;# 제목을 아랫줄에 작성, 제목 끝에 마침표 금지, 무엇을 했는지 명확하게 작성&#10;.gitignore 설정 변경&#10;################&#10;# 본문(추가 설명)을 아랫줄에 작성&#10;&#10;################&#10;# 꼬릿말(footer)을 아랫줄에 작성 (관련된 이슈 번호 등 추가)&#10;&#10;################&#10;# feat : 기능 추가&#10;# fix : 버그 수정&#10;# docs : 문서 수정&#10;# test : 테스트 코드 추가&#10;# refactor : 코드 리팩토링&#10;# style : 코드 의미에 영향을 주지 않는 변경사항&#10;# chore : 빌드 부분 혹은 패키지 매니저 수정사항&#10;# cicd : CI/CD 관련 설정&#10;################" />
+    <option name="LAST_COMMIT_MESSAGE" value="# &lt;타입&gt; : &lt;제목&gt; 형식으로 작성하며 제목은 최대 50글자 정도로만 입력&#10;# 제목을 아랫줄에 작성, 제목 끝에 마침표 금지, 무엇을 했는지 명확하게 작성&#10;.gitignore 설정 변경&#10;################&#10;# 본문(추가 설명)을 아랫줄에 작성&#10;&#10;################&#10;# 꼬릿말(footer)을 아랫줄에 작성 (관련된 이슈 번호 등 추가)&#10;&#10;################&#10;# feat : 기능 추가&#10;# fix : 버그 수정&#10;# docs : 문서 수정&#10;# test : 테스트 코드 추가&#10;# refactor : 코드 리팩토링&#10;# style : 코드 의미에 영향을 주지 않는 변경사항&#10;# chore : 빌드 부분 혹은 패키지 매니저 수정사항&#10;# cicd : CI/CD 관련 설정&#10;################" />
+  </component>
+</project>
