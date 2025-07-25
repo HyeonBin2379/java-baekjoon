@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c17251a-0870-4e6c-be04-177edc60f7c8" name="변경" comment="# &lt;타입&gt; : &lt;제목&gt; 형식으로 작성하며 제목은 최대 50글자 정도로만 입력&#10;# 제목을 아랫줄에 작성, 제목 끝에 마침표 금지, 무엇을 했는지 명확하게 작성&#10;&#10;################&#10;# 본문(추가 설명)을 아랫줄에 작성&#10;&#10;################&#10;# 꼬릿말(footer)을 아랫줄에 작성 (관련된 이슈 번호 등 추가)&#10;&#10;################&#10;# feat : 기능 추가&#10;# fix : 버그 수정&#10;# docs : 문서 수정&#10;# test : 테스트 코드 추가&#10;# refactor : 코드 리팩토링&#10;# style : 코드 의미에 영향을 주지 않는 변경사항&#10;# chore : 빌드 부분 혹은 패키지 매니저 수정사항&#10;# cicd : CI/CD 관련 설정&#10;################">
-      <change afterPath="$PROJECT_DIR$/src/algorithm/dp/Exercise1912.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,10 +52,24 @@
     "project.structure.last.edited": "모듈",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "애플리케이션.Exercise16953.executor": "Run",
     "애플리케이션.Exercise1912.executor": "Run"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="애플리케이션.Exercise16953">
+    <configuration name="Exercise16953" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.bfs.Exercise16953" />
+      <module name="java-baekjoon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithm.bfs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Exercise1912" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="algorithm.dp.Exercise1912" />
       <module name="java-baekjoon" />
@@ -73,6 +85,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.Exercise16953" />
         <item itemvalue="애플리케이션.Exercise1912" />
       </list>
     </recent_temporary>
