@@ -1,6 +1,7 @@
 # 백준/프로그래머스 문제풀이 소스코드 저장소
 
 ## 기본 프로필
+
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=hyunbinny)](https://solved.ac/hyunbinny/)
 
 </br>
