@@ -10,11 +10,11 @@ public class StockPrice {
 
     static class Stock {
         int price;
-        int idx;
+        int time;
 
-        public Stock(int price, int idx) {
+        public Stock(int price, int time) {
             this.price = price;
-            this.idx = idx;
+            this.time = time;
         }
     }
 
@@ -22,15 +22,17 @@ public class StockPrice {
         int[] answer = new int[prices.length];
         // 시간 경과
         for (int i = 0; i < prices.length; i++) {
-            // 가격 유지/상승 중인 주식만 stack에 남김
-            for (Stock stock : stack) {
-                answer[stock.idx]++;
-            }
-            // 가격이 하락한 주식만 stack에서 제외
+            // 가격이 하락한 주식은 stack에서 제외, 가격 하락 시점에 계산
             while (!stack.isEmpty() && prices[i] < stack.peek().price) {
-                stack.pop();
+                Stock popped = stack.pop();
+                answer[popped.time] = i - popped.time;
             }
             stack.push(new Stock(prices[i], i));
+        }
+        // 시간이 종료될 때까지 가격이 떨어지지 않은 시간 계산
+        while (!stack.isEmpty()) {
+            Stock popped = stack.pop();
+            answer[popped.time] = prices.length-1-popped.time;
         }
         return answer;
     }
