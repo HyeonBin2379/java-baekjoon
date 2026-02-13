@@ -6,7 +6,7 @@ public class MagicElevator {
         int answer = 0;
 
         // storey에서 시작 -> 최종적으로 0이 되어야 함
-        // 1
+        // 1의 자리부터 시작
         while (storey > 0) {
             int d = storey % 10;
 
