@@ -64,7 +64,8 @@ public class ConnectingIslands {
 				break;
 			}
 
-			// 방문하지 않은 인접한 섬들 중 연결 비용이 최소인 섬들을 우선순위큐에 추가
+			// 방문하지 않은 인접한 섬들 중 연결 비용이 저렴한 섬들을 우선순위큐에 추가
+			// 다음 섬에 관한 최소 연결 비용 갱신
 			for (Island next : graph.get(now.nodeNum)) {
 				if (!visited[next.nodeNum] && next.cost < dist[next.nodeNum]) {
 					dist[next.nodeNum] = next.cost;
